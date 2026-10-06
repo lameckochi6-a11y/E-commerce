@@ -5,20 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-commerce Website</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
   </head>
   <body>
     <div class="nav-bar">
       <h2>🛍️FashionHub</h2>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="new-arrival.html">New Arrival</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <div class="input-box">
-        <input type="text" id="text" placeholder="Text to search.." />
-        <button>Search</button>
+    
+      <!-- Hamburger button (only visible on mobile) -->
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    
+      <!-- Wrap nav links + search inside a collapsible container -->
+      <div class="nav-menu" id="navMenu">
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="new-arrival.html">New Arrival</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="input-box">
+          <input type="text" id="text" placeholder="Text to search.." />
+          <button>Search</button>
+        </div>
       </div>
     </div>
     <div class="shop-main">
@@ -59,5 +69,6 @@
         </div>
       </div>
     </div>
+    <script src="menu.js"></script>
   </body>
 </html>
